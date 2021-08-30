@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Food</title>
+
+    <!-- font family link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap Cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #2D2013;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        .heading {
+            font-size: 50px;
+            background-color: #23180D;
+
+        }
+
+        .hr-control {
+            background-color: #FFFFFFFF;
+            padding: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-warning py-4 text-uppercase heading ">Find your Choise Food From The Meal Db</h2>
+
+            <h1 class="text-white text-center mt-5">Welcome to TheMealDB</h1>
+
+            <h4 class="text-white  w-50 text-center mx-auto mb-5"> Welcome to TheMealDB: An open, crowd-sourced database
+                of
+                Recipes from
+                around
+                the world.
+                We also offer a <a class=" text-danger " href="">free JSON API</a> for anyone wanting to use it.
+                If you like the site, please consider supporting us on Patreon by clicking the link below...
+            </h4>
+            <hr class="hr-control  w-75 mx-auto mt-5">
+
+            <div class="input-group mb-3 w-25 mx-auto mt-5">
+                <input id="input-field" type="text" class="form-control" placeholder="Find your testy Food"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="loadFood()" class="btn btn-outline-secondary bg-white text-black" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+
+            <div class="text-center mt-3">
+                <img class="text-white pe-2" src="https://www.themealdb.com/images/icons/meal-icon6.png" alt="">
+                <p class="text-white d-inline-block align-items-center "> Total Meals: 282</p>
+                <img src="https://www.themealdb.com/images/icons/meal-icon4.png" class="text-white ps-5 pe-2" alt="">
+                <p class="text-white d-inline-block">Total
+                    Ingredients:
+                    574</p>
+                <img src="https://www.themealdb.com/images/icons/image2.png" class="ps-5" alt="">
+                <p class="text-white ps-2 d-inline-block ">Images: 282</p>
+            </div>
+
+            <hr class="hr-control w-75 mx-auto ">
+    </header>
+
+    <div id="detail-meal" class="w-50 mx-auto h-75 mb-5 ">
+
+    </div>
+
+    <!-- Search Meal display-->
+
+    <div id="search-field" class="row row-cols-1 row-cols-md-4 g-4">
+
+    </div>
+
+    <!-- This is for empty search -->
+    <div id="empty-string">
+
+    </div>
+
+
+    <!-- This is for wrong idea -->
+    <div id="wrod-idea">
+
+    </div>
+
+
+    <!-- Bootstrap Js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- js Srcipt  -->
+    <script src="js/food.js"></script>
+</body>
+
+</html>
